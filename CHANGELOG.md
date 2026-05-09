@@ -1,3 +1,6 @@
+## 4.7.1
+* Fix Android: remove auto-injected storage permissions from plugin manifest — storage permissions (`READ_EXTERNAL_STORAGE`, `READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO`, `READ_MEDIA_AUDIO`) are now marked `tools:node="remove"` so they are no longer merged into consuming apps automatically. Apps that need these permissions must declare them in their own `AndroidManifest.xml`.
+
 ## 4.7.0
 * Fix Android compatibility issues after Flutter 3.29.0 upgrade (Thanks to [mufassalhussain](https://github.com/mufassalhussain), PR[#19](https://github.com/javaherisaber/open_filex/pull/19))
 
